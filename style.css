@@ -1,8 +1,8 @@
 .flex-item{
-    width: 50px;
-    height: 50px;
-    background: chartreuse;
-    border: 2px solid black; 
+    min-width: 50px;
+    min-height: 50px;
+    background: yellow;
+    border: 6px solid chartreuse; 
 }
 
 /* Turn the OUTER div into a FLEXIBLE BOX which can control the LAYOUT of its INNER items */
@@ -10,5 +10,26 @@
 .flex-container {
     display: flex;
     justify-content:space-around;
+    align-items:stretch;
+
+    border:6px solid hotpink;
+    height: 100px;
+}
+
+/* If you set the direction to COLUMN instead, the MAIN AXIS and the CROSS AXIS switch */
+
+
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 6px solid hotpink;  
+    height: 250px
+}
+
+#special{
+    flex-grow: 15;
 }
 
